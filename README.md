@@ -1,2 +1,2 @@
 # EoS
-Economics of Cyber Security (WM0824) - Assignment
+Economics of Cyber Security (WM0824) - Assignments
