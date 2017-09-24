@@ -30,12 +30,13 @@ if __name__ == '__main__':
 
     results = []
 
-    for domain in domains:
+    for i, domain in enumerate(domains):
         if limit and succes >= limit:
             break
         if domain in ('-', ''):
             continue
         if succes > 0 and succes % 4 == 0:
+            print '(%d/%d)...' % (i, parts_size)
             time.sleep(61)
         params = {'apikey': SHARIF_API_KEY1, 'resource': domain}
         response = requests.get(url, params=params)
