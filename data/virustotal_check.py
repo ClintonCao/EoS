@@ -40,7 +40,7 @@ if __name__ == '__main__':
         params = {'apikey': SHARIF_API_KEY1, 'resource': domain}
         response = requests.get(url, params=params)
         json_response = response.json()
-        result = '%s: %d positives' % (domain, json_response['positives'])
+        result = '%s: %d' % (domain, json_response['positives'])
         results.append(result)
         print result
         succes += 1
