@@ -49,6 +49,6 @@ if __name__ == '__main__':
         except:
             break
 
-    with open('virustotal_report_%d.txt' % part, 'w') as f:
+    with open('2virustotal_report_%d.txt' % part, 'w') as f:
         for result in results:
             f.write('%s\n' % result)
